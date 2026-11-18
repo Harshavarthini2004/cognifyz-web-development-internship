@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Coffee - Home</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:#3e2414;">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-white has-text-weight-bold" href="index.html">
+                Urban Coffee
+            </a>
+
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="navBurger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-white is-active" href="index.html">Home</a>
+                <a class="navbar-item has-text-white" href="menu.html">Menu</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-medium" style="background-color:#d8c3a5;">
+        <div class="hero-body has-text-centered">
+            <p class="title" style="color:#3e2414;">Coffee, Brewed With Care</p>
+            <p class="subtitle" style="color:#5c3620;">
+                Small-batch roasted beans and a warm seat for every visit.
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4 has-text-centered" style="color:#3e2414;">Featured Brew</h2>
+
+            <div class="card" style="max-width: 420px; margin: 0 auto;">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="images/coffee-card.svg" alt="Featured coffee cup">
+                    </figure>
+                </div>
+
+                <div class="card-content has-text-centered">
+                    <p class="title is-5">Caramel Pour-Over</p>
+                    <div class="content">
+                        A smooth single-origin pour-over finished with a hint
+                        of caramel sweetness.
+                    </div>
+                    <button class="button" style="background-color:#4b2e1e; color:white;" onclick="showBrewInfo()">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section about-section">
+        <div class="container has-text-centered">
+            <h2 class="title is-4" style="color:#3e2414;">About Urban Coffee</h2>
+            <p>
+                Urban Coffee sources beans directly from small farms
+                and roasts every batch in-house for maximum freshness.
+            </p>
+        </div>
+    </section>
+    <footer class="footer has-text-centered has-text-white" style="background-color:#3e2414;">
+        <p>&copy; 2026 Urban Coffee</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

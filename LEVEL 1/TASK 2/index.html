@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarogya Fitness Studio - Interactive Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/fitness-hero.svg" alt="Aarogya Fitness Studio">
+    </header>
+
+    <div class="title-block">
+        <h1>Aarogya Fitness Studio</h1>
+        <p>Small interactive tools for our members' dashboard.</p>
+    </div>
+
+    <section id="tools">
+
+        <!-- 1. Button Color Change -->
+        <div class="feature">
+            <h3>Studio Light Switch</h3>
+            <p class="desc">Tap the button to change the studio light color.</p>
+            <button id="colorButton" onclick="changeColor()">Toggle Lights</button>
+        </div>
+
+        <!-- 2. Greeting -->
+        <div class="feature">
+            <h3>Class Time Greeting</h3>
+            <p class="desc">Get a greeting based on the current time of day.</p>
+            <button onclick="showGreeting()">Show Greeting</button>
+        </div>
+
+        <!-- 3. Calculator -->
+        <div class="feature">
+            <h3>Calorie Adder</h3>
+            <p class="desc">Add calories burned across two workout sessions.</p>
+            <input type="number" id="number1" placeholder="Session 1">
+            <input type="number" id="number2" placeholder="Session 2">
+            <br>
+            <button onclick="calculateSum()">Add Totals</button>
+            <p id="result"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2026 Aarogya Fitness Studio
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
